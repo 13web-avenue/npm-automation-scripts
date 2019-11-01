@@ -1,0 +1,39 @@
+{
+  "name": "asset-bundling-optimization-serving",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:templates": "pug --pretty --out www/ ./views/applications/pages/",
+    "build:js": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js",
+    "compile:scss": "node-sass -o assets/style/uncompressed/ assets/style/libs/",
+    "compile:css": "babel-node ./npm-ext-scripts/npm-concat",
+    "minify-cssthemes": "postcss --use cssnano --dir ./www/assets/style/ assets/style/uncompressed/custom.uncompressed.css",
+    "minify-csslibs": "postcss --use cssnano --dir ./www/assets/style/libs/ assets/style/uncompressed/",
+    "compress-svg": "svgo -f assets/images/ -o www/assets/images/",
+    "compress-fonts": "",
+    "compress-icons": "",
+    "lint:es": "eslint ./assets/javascripts/*.js",
+    "lint:fix": "eslint --fix ./assets/javascripts/*.js",
+    "lint:style": "stylelint ./assets/style/**/*.css --config  ./.stylelintrc.json",
+    "clean": "rimraf ./www && mkdir www"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.3",
+    "rimraf": "^3.0.0",
+    "uglify-es": "^3.3.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "clean-css": "^4.2.1",
+    "clean-css-cli": "^4.2.1",
+    "concat": "^1.0.3",
+    "cssnano": "^4.1.4",
+    "eslint": "^6.6.0",
+    "imagemin-cli": "^5.0.0",
+    "postcss-cli": "^6.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "svgo": "^1.1.1"
+  }
+}

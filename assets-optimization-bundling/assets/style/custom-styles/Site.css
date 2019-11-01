@@ -1,0 +1,378 @@
+/*Add here your custom CSS*/
+.modal {
+    overflow: auto !important;
+}
+
+.modal-dialog {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    min-width: 60%;
+}
+
+.progress-small {
+    height: 5px !important;
+}
+
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #478FCC;
+}
+
+    .inputfile-1:focus + label,
+    .inputfile-1.has-focus + label,
+    .inputfile-1 + label:hover {
+        background-color: #3374BA;
+    }
+
+
+#payrollDetail .modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: initial !important;
+}
+
+#payrollDetail .modal-content {
+    height: 100%;
+    min-height: 100%;
+    border-radius: 0;
+}
+
+#payrollDetail .modal-body {
+    background: #ffffff;
+    overflow-y: auto;
+    padding: 35px !important;
+}
+
+#uploadedPayrollDetail .modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: initial !important;
+}
+
+#uploadedPayrollDetail .modal-content {
+    height: 100%;
+    min-height: 100%;
+    border-radius: 0;
+}
+
+#uploadedPayrollDetail .modal-body {
+    background: #ffffff;
+    overflow-y: auto;
+    padding: 35px !important;
+}
+
+#validPayrolls span, #invalidPayrolls span {
+    padding-left: 49%;
+    display: block;
+}
+
+#validPayrolls i.fa-frown-o {
+    color: #B62025;
+    display: block;
+    padding-left: 4%;
+}
+
+#invalidPayrolls i.fa-smile-o {
+    color: #378E43;
+    display: block;
+    padding-left: 4%;
+}
+
+.jumbotron {
+    background-color: #ffffff;
+    display: inline-table;
+    left: 30%;
+    position: relative;
+}
+
+.payroll-panel {
+    display: block;
+    width: 40vw;
+}
+
+.payroll-panel-item {
+    margin: 20px;
+    text-align: center;
+    width: 170px;
+    height: 130px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    display: inline-table;
+    text-overflow: clip;
+}
+
+    .payroll-panel-item i.fa {
+        display: block;
+        padding: 15px;
+    }
+
+    
+    .color-red {
+        color: red;
+    }
+
+.color-yellow {
+    color: #FF8000;
+    cursor: help;
+}
+
+.payroll-panel-item a, .payroll-panel-item a:hover {
+    text-decoration: none;
+    color: #000000;
+    word-wrap: break-word;
+}
+
+.git-import-parameters-color {
+    color: #757575;
+}
+
+.upload-excel-file-color {
+    color: #3374BA;
+}
+
+.payroll-amount-color {
+    color: #B62025;
+}
+
+.user-analytic-color {
+    color: #000;
+}
+
+.payment-information-color {
+    color: #378E43;
+}
+
+.yearly-wage-book-color {
+    color: #000;
+}
+
+.invalid-payroll-amount-badge {
+    background-color: #D32E2E;
+}
+
+
+.padding-5px {
+    padding: 5px;
+}
+
+.padding-left-10px {
+    padding-left: 10px;
+}
+
+.datepickerinput, .input-group.date {
+    /*width: 300px !important;*/
+    background-color: #ffffff !important;
+}
+
+.width-auto {
+    width: auto;
+}
+
+.padding-0 {
+    padding: 0px !important;
+}
+
+.padding-left-right-0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.payroll-check-validated {
+    position: absolute;
+    right: -12px;
+    top: -15px;
+}
+
+.padding-top-bottom-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0px;
+}
+
+
+.payroll-check-validated .tooltip-inner {
+    max-width: none !important;
+    white-space: nowrap;
+}
+
+.display-none {
+    display: none;
+}
+
+.alert-common-style {
+    margin-bottom: 0px;
+    padding: 10px !important;
+}
+
+.white-space-nowrap {
+    white-space: nowrap;
+}
+
+.delete-financial-line {
+    position: relative;
+    top: 6px;
+}
+
+.spiner-indicator {
+    float: right;
+    bottom: 30px;
+    position: relative;
+    left: 5px;
+}
+
+.margin-left-25px {
+    margin-left: 25px;
+}
+
+.missing-employees-name p {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.missing-employees-name {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+
+.ellipsis-text {
+    width: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+input[type="checkbox"][disabled]:disabled {
+    opacity: 0.3;
+    box-shadow: none;
+
+}
+
+.hand-focus{
+    cursor: pointer;
+}
+
+.background-color-green{
+    background-color: green;
+}
+
+.color-orange{
+    color: orange;
+}
+
+.color-gray {
+    color: gray;
+}
+
+.circle-icon {
+    background: gray;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    line-height: 27px;
+    text-align: center;
+    vertical-align: middle;
+    color: white
+}
+.tooltip-inner {
+    white-space: pre-wrap;
+}
+
+.pull-left .btn-secondary {
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    visibility: hidden;
+}
+
+.payroll-panel-item:hover .pull-left .btn-secondary {
+    visibility: visible;
+}
+
+.pull-left .btn-secondary i.fa {
+    padding: 0px;
+}

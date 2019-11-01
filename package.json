@@ -1,0 +1,8 @@
+{
+  "name": "npm-scripts-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/13web-avenue/npm-automation-scripts.git",
+  "author": "Muniir Gopaul <muniirwebarts@gmail.com>",
+  "license": "MIT"
+}
