@@ -18,7 +18,7 @@
     "clean": "rimraf ./www && mkdir www"
   },
   "dependencies": {
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "rimraf": "^3.0.0",
     "uglify-es": "^3.3.9"
   },
